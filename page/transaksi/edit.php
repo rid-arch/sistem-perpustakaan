@@ -27,10 +27,7 @@
 											<label for="judul">Judul</label>
 
                                             <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Mahasiswa" value="<?= $e["nama"]; ?>" required>
-												<!-- <select name="jk" class="form-control" id="jk" name="jk" required> -->
-													<!-- <option value="<?= $e["jk"]; ?>"><?= $e["jk"]; ?></option>
-													<option value="Laki-laki">Laki-laki</option>
-													<option value="Perempuan">Perempuan</option> -->
+
 										</div>
 
 									 	<div class="form-group">

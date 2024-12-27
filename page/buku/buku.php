@@ -12,13 +12,13 @@
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th># </th>
+                                            <th>No </th>
                                             <th>Judul</th>
                                             <th>Pengarang</th>
                                             <th>Penerbit</th>
                                             <th>Tahun Terbit</th>
                                             <th>Jumlah Buku</th>
-                                            <!--<th>ISBN</th>-->
+                                            <th>ISBN</th>
                                             <th>Gambar</th>
                                             <th>Aksi</th>
                                         </tr>
@@ -39,7 +39,7 @@
                                             <td><?= $b["penerbit"]; ?></td>
                                             <td><?= $b["tahun_terbit"]; ?></td>
                                             <td><?= $b["jumlah_buku"]; ?></td>
-                                            <!--<td><?= $b["isbn"]; ?></td>-->
+                                            <td><?= $b["isbn"]; ?></td>
                                             <td><img src="images/buku/<?= $b["gambar"]; ?>" height="100"></td>
                                             <td>
                                                 <a href="?page=buku&aksi=edit&id=<?php echo $b['id'];?>" class="btn btn-info">Edit </a>

@@ -19,4 +19,15 @@
 	}
 	return $hasil_tgl;
 	}
+
+	function getAdminData() {
+		global $mysqli;
+		$result = $mysqli->query("SELECT * FROM tb_admin WHERE level = 'admin'");
+		$admins = [];
+		while ($row = $result->fetch_assoc()) {
+			$admins[] = $row;
+		}
+		return $admins;
+	}
 ?>
+

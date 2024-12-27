@@ -4,7 +4,7 @@
 
         $host="localhost";
         $user="root";
-        $pass="";
+        $password="";
         $database="db_perpustakaan";
         $mysqli= new mysqli ($host,$user,$pass,$database);
         //Object Oriented Style $mysqli -> new mysqli(host, username, password, dbname, port, socket)

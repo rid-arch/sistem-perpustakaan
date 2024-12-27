@@ -49,4 +49,4 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="./laporan/laporan_anggota_excel.php" class="btn btn-default" target="blank" style="margin-top: 10px; "><i class="fa fa-print" style="margin-right: 7px;"> </i>ExportToExcel</a>
+                            <a href="./laporan/laporan_anggota_exel.php" class="btn btn-default" target="blank" style="margin-top: 10px; "><i class="fa fa-print" style="margin-right: 7px;"> </i>ExportToExcel</a>

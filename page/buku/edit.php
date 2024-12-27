@@ -43,6 +43,11 @@
 									</div>
 
 									<div class="form-group">
+								 		<label for="isbn">ISBN</label>
+								 		<input type="text" class="form-control" id="isbn" name="isbn" value="<?= $e["isbn"]; ?>" required>
+								 	</div>
+
+									<div class="form-group">
 										<label for="jumlah_buku">Jumlah Buku</label>
 										<input type="number" class="form-control" id="jumlah_buku" name="jumlah_buku" value="<?= $e["jumlah_buku"]; ?>" required>
 									</div>

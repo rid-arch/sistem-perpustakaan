@@ -4,6 +4,7 @@
 	$pengarang 			= $_POST["pengarang"];
 	$penerbit			= $_POST["penerbit"];
 	$tahun_terbit		= $_POST["tahun_terbit"];
+	$isbn				= $_POST["isbn"];
 	$jumlah_buku		= $_POST["jumlah_buku"];
 	$gambar 			= $_FILES["gambar"]["name"];
 	// jika gambar tidak diganti

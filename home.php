@@ -181,4 +181,46 @@ if (isset($_SESSION["login"])) {
                 </div>
             </div>
 
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                           Data Admin
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Username</th>
+                                            <th>Nama</th>
+                                            <th>Level</th>
+                                            <th>Foto</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php foreach ($admin as $admin): ?>
+                                        <?php 
+                                        include "function.php";
+                                        $admin= getAdminData();
+                                        ?>
+
+                                            <!-- $admin = $mysqli->query($sql = "SELECT * FROM `admin`;");
+                                            $id = 0;
+                                            while( $t = $admin->fetch_assoc())
+                                            $id++;
+                                         ?> -->
+
+                                        <tr>
+                                            <th scope="row"><?= $no; ?></th>
+                                            <td><?= $t["id"]; ?></td>
+                                            <td><?= $t["username"]; ?></td>
+                                            <td><?= $t["nama"]; ?></td>
+                                            <td><?= $t["level"]; ?></td>
+                                            <td><?= $t["foto"]; ?></td>
+                                            <td>
+                                    </tr>
+                                    <?php endforeach; ?>
+
             <?php include "koneksi.php"; ?>

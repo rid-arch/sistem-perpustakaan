@@ -40,7 +40,7 @@
 												<input type="text" class="form-control" id="tanggal_kembali" placeholder="Masukkan Tanggal" name="tanggal_kembali" required>
 											</div>
 
-											<div class="form-group">
+											<div class="form-group>
 												<label for="status">Status</label>
 												<input type="text" class="form-control" id="status" placeholder="Masukkan Status Transaksi" name="status" required>
 											</div>
@@ -65,3 +65,14 @@
 								</div>
 							</div>
 						</div>
+
+
+						<script>
+        window.onload = function() {
+            var today = new Date();
+            var day = ("0" + today.getDate()).slice(-2);
+            var month = ("0" + (today.getMonth() + 1)).slice(-2);
+            var date = today.getFullYear() + "-" + (month) + "-" + (day);
+            document.getElementById('tanggal_pinjam').value = date;
+        }
+    </script>
